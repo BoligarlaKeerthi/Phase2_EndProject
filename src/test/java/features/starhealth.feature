@@ -14,5 +14,5 @@ And User enters following details
 And  User clicks on I need health insurance from the drop-down menu and select plan
 Then  User click on the Plan for My Family page 
 And Validate the user mobile number
-#And User clicks on the Star Health logo 
+And User clicks on the Star Health logo 
 And Close all the browsers

@@ -45,13 +45,11 @@ public class StarthealthPage {
 	@Then("User enters following details")
 	public void user_enters_following_details(DataTable datatable) {
 		
-		// fetches the entire data table
+		
 				List<Map<String, String>> userList	= datatable.asMaps(String.class, String.class);
-			// Now iterate over each row of the data table and get the value based on the columnname(key)
-				
-				//| URL | FullName | PhNo | PIN | OptionPlan |
+			
 				for(Map<String, String> e : userList) {
-					// System.out.println(e);
+					
 					driver.findElement(By.xpath("//input[@id='name']")).clear();
 					driver.findElement(By.xpath("//input[@id='name']")).sendKeys(e.get("Name"));
 					driver.findElement(By.xpath("//input[@id='contact_no']")).clear();
